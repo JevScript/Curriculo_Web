@@ -177,6 +177,106 @@ footer {
     padding: 20px 0;
     margin-top: 20px;
 }
+/* Thema escuro */
+/* Botao */
+/* --- Estilos para o Botão de Modo Escuro --- */
+#darkModeToggle {
+    background: none;
+    border: none;
+    color: #fff; /* Cor inicial no cabeçalho claro */
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute; /* Posicione-o onde desejar */
+    top: 72px;
+    right: 30%;
+    transition: color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    color: #77aaff;
+}
+
+/* --- Estilos do Modo Escuro --- */
+/* Quando o body tem a classe dark-mode, aplique esses estilos */
+body.dark-mode {
+    background-color: #1a1a2e; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+body.dark-mode header {
+    background: #0f0f1c; /* Cabeçalho mais escuro */
+    border-bottom-color: #4CAF50; /* Outra cor de destaque */
+}
+
+body.dark-mode header nav ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+body.dark-mode section {
+    background-color: #2e2e42; /* Fundo de seção escuro */
+    border-bottom-color: #3a3a5a;
+}
+
+body.dark-mode section h2 {
+    color: #fff;
+}
+
+body.dark-mode section h2::after {
+    background: #4CAF50; /* Cor da linha sob o título */
+}
+
+body.dark-mode .job-item,
+body.dark-mode .edu-item,
+body.dark-mode .project-item,
+body.dark-mode .skills-category {
+    background: #3a3a5a; /* Fundo de itens escuro */
+    border-left-color: #4CAF50; /* Borda de itens escura */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+body.dark-mode .job-item h3,
+body.dark-mode .edu-item h3,
+body.dark-mode .project-item h3 {
+    color: #81C784; /* Títulos de itens claros */
+}
+
+body.dark-mode .skills-category h3 {
+    color: #ccc;
+    border-bottom-color: #4a4a6a;
+}
+
+body.dark-mode .skills-category ul li {
+    background: #4a4a6a;
+    color: #e0e0e0;
+}
+
+body.dark-mode .project-item a,
+body.dark-mode #contato a {
+    color: #81C784; /* Links em modo escuro */
+}
+
+body.dark-mode footer {
+    background: #0f0f1c;
+    color: #e0e0e0;
+}
+
+/* Ajusta a cor do botão do dark mode para ser visível no modo escuro */
+body.dark-mode #darkModeToggle {
+    color: #e0e0e0; /* Cor clara para o ícone no modo escuro */
+}
+
+
+
+
+
+
+
+
+
 
 /* Responsividade Básica */
 @media (max-width: 768px) {
